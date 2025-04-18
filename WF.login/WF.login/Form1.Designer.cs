@@ -87,11 +87,11 @@
             Access.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 128, 0);
             Access.FlatStyle = FlatStyle.Popup;
             Access.Font = new Font("Segoe UI Variable Text Semibold", 14F, FontStyle.Underline);
-            Access.Location = new Point(655, 515);
+            Access.Location = new Point(654, 506);
             Access.Margin = new Padding(9);
             Access.Name = "Access";
             Access.Size = new Size(275, 52);
-            Access.TabIndex = 3;
+            Access.TabIndex = 2;
             Access.Text = "Access";
             Access.UseVisualStyleBackColor = false;
             Access.Click += Access_Click;
@@ -100,12 +100,14 @@
             // 
             textBox1.BackColor = Color.Silver;
             textBox1.Location = new Point(444, 96);
+            textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.PasswordChar = '*';
             textBox1.PlaceholderText = "Password";
             textBox1.ShortcutsEnabled = false;
             textBox1.Size = new Size(245, 31);
-            textBox1.TabIndex = 2;
+            textBox1.TabIndex = 6;
+            textBox1.UseSystemPasswordChar = true;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
@@ -114,7 +116,7 @@
             textBox2.Location = new Point(444, 39);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(245, 31);
-            textBox2.TabIndex = 1;
+            textBox2.TabIndex = 7;
             textBox2.Tag = "Login";
             textBox2.TextChanged += textBox2_TextChanged;
             textBox2.Leave += textBox2_Leave;
@@ -123,7 +125,7 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.BackColor = Color.Transparent;
-            linkLabel1.Location = new Point(787, 61);
+            linkLabel1.Location = new Point(778, 89);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(143, 25);
             linkLabel1.TabIndex = 8;
@@ -136,7 +138,7 @@
             checkBox1.AutoSize = true;
             checkBox1.BackColor = Color.Transparent;
             checkBox1.FlatAppearance.MouseDownBackColor = Color.Yellow;
-            checkBox1.Location = new Point(357, 538);
+            checkBox1.Location = new Point(357, 523);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(185, 29);
             checkBox1.TabIndex = 9;
@@ -159,7 +161,7 @@
             // 
             linkLabel2.AutoSize = true;
             linkLabel2.BackColor = Color.Transparent;
-            linkLabel2.Location = new Point(832, 37);
+            linkLabel2.Location = new Point(799, 30);
             linkLabel2.Name = "linkLabel2";
             linkLabel2.Size = new Size(98, 25);
             linkLabel2.TabIndex = 12;
@@ -183,7 +185,7 @@
             // 
             linkLabel4.AutoSize = true;
             linkLabel4.BackColor = Color.Transparent;
-            linkLabel4.Location = new Point(832, 86);
+            linkLabel4.Location = new Point(799, 55);
             linkLabel4.Name = "linkLabel4";
             linkLabel4.Size = new Size(95, 25);
             linkLabel4.TabIndex = 15;
@@ -225,6 +227,7 @@
             Controls.Add(Access);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "Form1";
             FormClosing += Form1_FormClosing;
@@ -250,7 +253,9 @@
         private LinkLabel linkLabel2;
         private Label label2;
         private PictureBox pictureBox1;
+
         private LinkLabel linkLabel4;
         private Button button1;
+
     }
 }

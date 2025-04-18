@@ -90,11 +90,13 @@ namespace WF.login
 
         private void Access_Click(object sender, EventArgs e)
         {
-            var resposta = MessageBox.Show("leave page?", "Title", MessageBoxButtons.YesNoCancel,
-                MessageBoxIcon.Question);
-            if (resposta == DialogResult.Yes)
+         
             {
-                Application.Exit();
+                this.Hide();
+                Formprincipal form = new Formprincipal();
+                form.ShowDialog();
+
+
             }
         }
 

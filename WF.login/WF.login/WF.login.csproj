@@ -9,6 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="Formprincipal - Cópia - Cópia %282%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formprincipal - Cópia - Cópia %283%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formprincipal - Cópia - Cópia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Formprincipal - Cópia.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

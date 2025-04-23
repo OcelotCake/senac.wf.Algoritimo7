@@ -1,6 +1,7 @@
 ﻿namespace WF.login
 {
-    partial class Formprincipal
+    partial class Formdelivery
+
     {
         /// <summary>
         /// Required designer variable.
